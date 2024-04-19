@@ -1,9 +1,10 @@
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Questions from './views/Questions';
 import Registration from './views/Registration';
-import Navigation from './Navigation';
-import { useState } from 'react';
+import Navigation from './components/Navigation';
 import Home from './Home';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
     <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/questions" element={<Questions />} />
-          <Route path="/register" element={<Registration />}/>
+          <Route path="/registration" element={<Registration />}/>
     </Routes>
     </>
   );
