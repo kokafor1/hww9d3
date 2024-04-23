@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { register } from '../api';
+import { register } from '../lib/apiWrapper';
 import { UserFormType } from '../types';
 
 type RegistrationProps = {};

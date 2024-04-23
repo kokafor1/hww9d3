@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAllQuestions } from '../api'; 
+import { getAllQuestions } from '../lib/apiWrapper'; 
 import { QuestionType } from '../types';
 import QuestionCard from '../components/QuestionCard';
 
