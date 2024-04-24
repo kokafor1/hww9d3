@@ -51,6 +51,7 @@ const logUserIn = () => {
 const flashMessage = (newMessage:string|undefined, newCategory:CategoryType|undefined) => {
   setMessage(newMessage);
   setCategory(newCategory);
+}
   
 const logUserOut = () => {
   localStorage.removeItem('token')
@@ -89,4 +90,4 @@ const logUserOut = () => {
     </>
   );
 };
-}
+

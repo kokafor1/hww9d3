@@ -14,7 +14,7 @@ type QuestionEditProps = {
 
 export default function QuestionEdit({ flashMessage, currentUser }: QuestionEditProps) {
     const navigate = useNavigate();
-    const questionId = useParams();
+    const {questionId} = useParams();
 
     const [newQuestionData, setNewQuestionData] = useState<CreateQuestionType>({question: '', answer: ''})
     const [showModal, setShowModal] = useState(false);
